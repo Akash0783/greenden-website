@@ -1,0 +1,75 @@
+<style>
+.container {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 3fr;
+    padding: 10px;
+    width: 500px;
+}
+.header{
+    background-color: lightseagreen;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.middle {
+    color: white;
+    margin: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.footer {
+    background-color: lightseagreen;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   
+}
+.aside {
+    background-color: lightgreen;
+    height: 200px;
+    margin: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.article {
+    background-color: orange;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: end;
+
+} 
+.image {
+    border: solid black 1px;
+    padding: 20px;
+    margin: 2px;
+    margin-bottom: 10px;
+    background-color: orchid;
+}
+
+</style>
+
+
+<div class="container">
+   <div class="header">Header</div>
+   <div class="middle">
+    <div class="aside">Aside</div>
+    <div class="article">
+     
+        <div class="image">Image</div>
+        <div class="image">Image</div>
+        <div class="image">Image</div>
+    </div>
+   </div>
+   <div class="footer">Footer</div>
+</div>

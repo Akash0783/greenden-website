@@ -14,7 +14,7 @@
     <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
             <h1 class="text-2xl">Greenden</h1>
     
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                 class="w-6 h-6 md:hidden">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
@@ -33,11 +33,29 @@
             </ul>
     </nav>
     
+    <!-- Side Nav -->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+        <div id="close" class="text-right p-5">
+           <p  id="close-btn" class="inline cursor-pointer">X</p>
+        </div>
+         <ul class="flex flex-col gap-10 items-center text-gray-600 ">
+            <li>
+                <a href="index.html" class="hover:underline hover:text-black  ">Home</a>
+            </li>
+            <li>
+                <a href="product.html" class="hover:underline hover:text-black">Product</a>
+            </li>
+            <li>
+                <a href="contact.html" class="hover:underline hover:text-black">Contact</a>
+            </li>
+        </ul>
+    </section>
+
     <!-- Products -->
     <section class="text-center m-5 p-3">
         <h1 class="text-4xl font-bold  m-3">Our Products</h1>
-        <input type="text" class="border border-black  p-2 m-3" style="width: 80%;" placeholder="Search for a Product...">
-        <div class="grid grid-cols-2  md:grid-cols-4 mt-5">
+        <input type="text" id="search" class="border border-black  p-2 m-3" style="width: 80%;" placeholder="Search for a Product...">
+        <div id="productContainer" class="grid grid-cols-2  md:grid-cols-4 mt-5">
             <div class="m-3">
                 <img src="./Images/product_5.png" alt="rose" class="inline transform hover:-translate-y-2 hover:shadow-xl">
                 <h1>Rose Plant</h1>
@@ -86,7 +104,7 @@
         <p>The Standard Chunk of Lorem used since the 1500 is reproduced below for those interest</p>
         <p>@ 2021 Greenday.com</p>
       </section>
-  
+    <script src="product.js"></script>  
 </body>
 
 </html>
